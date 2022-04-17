@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turismo Coogranada</title>
+    <link rel="stylesheet" href="./css/final1.css">
+    <link rel="stylesheet" href="./css/final2.css">
+    <link rel="stylesheet" href="./css/final.css">
+
+</head>
+<body>
+
+    <header class="header">
+        <div class="container">
+            <div class="row">
+                
+                <div class="four columns">
+                    <h1><img class="logo u-full-width" src="./imagenes/logo1.png" alt="">Viaja con nosotros</h1>
+                </div>
+
+                <div class="two columns u-pull-rigth">
+
+                    <ul>
+                        <li class="submenu">
+                            <img src="./imagenes/cart.png" alt="">
+                            <div id="carrito">
+                                <p class="vacio">carrito vacio</p>
+                                <table class="u-full-width">
+
+                                    <thead>
+                                        <tr>
+                                            <th>Imagen</th>
+                                            <th>Viaje</th>
+                                            <th>Precio</th>
+                                        </tr>
+                                    </thead>
+
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <img src="./imagenes/amazonas.jpg" width="100" alt="">
+                                            </td>
+                                            <td>Amazonas</td>
+                                            <td>COP$ 950.000</td>
+                                            <td><a href="#" class="borrar-destino"></a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <img src="./imagenes/bahía.jpg" width="100" alt="">
+                                            </td>
+                                            <td>Bahía Solano</td>
+                                            <td>COP$ 1.100.000</td>
+                                            <td><a href="#" class="borrar-destino"></a></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <a href="#" class="button u-full-width">vaciar carrito</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    
+    </header>
+
+    <div class="hero">
+        <div class="container">
+            <div class="row">
+                <div class="six columns">
+                    <div class="contenido-hero">
+                        <h2>Alista la maleta</h2>
+                        <p>Buenas experiencias garantizadas</p>
+                        <form>
+                            <input class="u-full-width" type="text" placeholder="¿A dónde quieres viajar?" id="buscador">
+                            <input type="submit" class="submit-buscador">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="barra">
+        <div class="container">
+            <div class="row">
+                <div class="four columns icono icono1">
+                    <p>Cientos de destinos</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="lista-viajes" class="container">
+        <h1 class="encabezado">Cotiza en línea</h1>
+
+        <div class="row">
+            <div class="four columns">
+                <div class="card">
+                    <img src="./imagenes/amazonas.jpg" class="imagen-viaje u-full-width">
+                    <div class="info-card">
+                        <h4>Amazonas</h4>
+                        <p>El pulmón verde del mundo</p>
+                        <img src="./imagenes/estrellas.png" alt="">
+                        <p class="precio">COP$ 950.000 <span class="u-pull-rigth">COP$ 950.000</span></p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="1">Agregar al carrito</a>
+                    </div>
+                </div>
+            </div>
+            <div class="four columns">
+                <div class="card">
+                    <img src="./imagenes/bahía.jpg" class="imagen-viaje u-full-width">
+                    <div class="info-card">
+                        <h4>Bahía Solano</h4>
+                        <p>Conoce las ballenas jorobadas</p>
+                        <img src="./imagenes/estrellas.png" alt="">
+                        <p class="precio">COP$ 1.100.000 <span class="u-pull-rigth">COP$ 1.100.000</span></p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="1">Agregar al carrito</a>
+                    </div>
+                </div>
+            </div>
+            <div class="four columns">
+                <div class="card">
+                    <img src="./imagenes/cartagena.jpg" class="imagen-viaje u-full-width">
+                    <div class="info-card">
+                        <h4>Cartagena</h4>
+                        <p>Nuestra ciudad heróica</p>
+                        <img src="./imagenes/estrellas.png" alt="">
+                        <p class="precio">COP$ 650.000 <span class="u-pull-rigth">COP$ 650.000</span></p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="1">Agregar al carrito</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="four columns">
+                <div class="card">
+                    <img src="./imagenes/ciudad-perdida.jpg" class="imagen-viaje u-full-width">
+                    <div class="info-card">
+                        <h4>Ciudad perdida</h4>
+                        <p>El mundo oculto en la sierra nevada</p>
+                        <img src="./imagenes/estrellas.png" alt="">
+                        <p class="precio">COP$ 1.450.000 <span class="u-pull-rigth">COP$ 1.450.000</span></p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="1">Agregar al carrito</a>
+                    </div>
+                </div>
+            </div>
+            <div class="four columns">
+                <div class="card">
+                    <img src="./imagenes/fiordo.jpg" class="imagen-viaje u-full-width">
+                    <div class="info-card">
+                        <h4>Fiordos</h4>
+                        <p>Viaja a los países nórdicos</p>
+                        <img src="./imagenes/estrellas.png" alt="">
+                        <p class="precio">COP$ 8.500.000 <span class="u-pull-rigth">COP$ 8.500.000</span></p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="1">Agregar al carrito</a>
+                    </div>
+                </div>
+            </div>
+            <div class="four columns">
+                <div class="card">
+                    <img src="./imagenes/mexico.jpg" class="imagen-viaje u-full-width">
+                    <div class="info-card">
+                        <h4>México</h4>
+                        <p>El país de los mayas y los aztecas</p>
+                        <img src="./imagenes/estrellas.png" alt="">
+                        <p class="precio">COP$ 2.850.000 <span class="u-pull-rigth">COP$ 2.850.000</span></p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="1">Agregar al carrito</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="four columns">
+                <div class="card">
+                    <img src="./imagenes/paris.jpg" class="imagen-viaje u-full-width">
+                    <div class="info-card">
+                        <h4>París</h4>
+                        <p>La ciudad luz</p>
+                        <img src="./imagenes/estrellas.png" alt="">
+                        <p class="precio">COP$ 3.800.000 <span class="u-pull-rigth">COP$ 3.800.000 </span></p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="1">Agregar al carrito</a>
+                    </div>
+                </div>
+            </div>
+            <div class="four columns">
+                <div class="card">
+                    <img src="./imagenes/peru.jpg" class="imagen-viaje u-full-width">
+                    <div class="info-card">
+                        <h4>Perú</h4>
+                        <p>La tierra de los incas</p>
+                        <img src="./imagenes/estrellas.png" alt="">
+                        <p class="precio">COP$ 4.800.000 <span class="u-pull-rigth">COP$ 4.800.000</span></p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="1">Agregar al carrito</a>
+                    </div>
+                </div>
+            </div>
+            <div class="four columns">
+                <div class="card">
+                    <img src="./imagenes/punta-cana.jpg" class="imagen-viaje u-full-width">
+                    <div class="info-card">
+                        <h4>República Dominicana</h4>
+                        <p>Visita la antigua isla La Española y sus máginas playas</p>
+                        <img src="./imagenes/estrellas.png" alt="">
+                        <p class="precio">COP$ 2.650.000 <span class="u-pull-rigth">COP$ 2.650.000</span></p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="1">Agregar al carrito</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="four columns">
+                <div class="card">
+                    <img src="./imagenes/royal.jpg" class="imagen-viaje u-full-width">
+                    <div class="info-card">
+                        <h4>Crucero por el Caribe</h4>
+                        <p>Visita las islas del sur del Caribe</p>
+                        <img src="./imagenes/estrellas.png" alt="">
+                        <p class="precio">COP$ 6.400.000 <span class="u-pull-rigth">COP$ 6.400.000 </span></p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="1">Agregar al carrito</a>
+                    </div>
+                </div>
+            </div>
+            <div class="four columns">
+                <div class="card">
+                    <img src="./imagenes/venecia.jpg" class="imagen-viaje u-full-width">
+                    <div class="info-card">
+                        <h4>Crucero por el Mediterráneo</h4>
+                        <p>Visita el viejo mundo</p>
+                        <img src="./imagenes/estrellas.png" alt="">
+                        <p class="precio">COP$ 8.300.000 <span class="u-pull-rigth">COP$ 8.300.000</span></p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="1">Agregar al carrito</a>
+                    </div>
+                </div>
+            </div>
+            <div class="four columns">
+                <div class="card">
+                    <img src="./imagenes/crucero.jpg" class="imagen-viaje u-full-width">
+                    <div class="info-card">
+                        <h4>Jamaica Legendario</h4>
+                        <p>Un recorrido por las Islas más impresionantes del Caribe</p>
+                        <img src="./imagenes/estrellas.png" alt="">
+                        <p class="precio">COP$ 7.300.000 <span class="u-pull-rigth">COP$ 7.300.000</span></p>
+                        <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="1">Agregar al carrito</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="four columns">
+                    <nav class="menu">
+                        <a class="enlace" href="#">Cotiza en línea</a>
+                        <a class="enlace" href="#">Contáctanos vía celular</a>
+                        <a class="enlace" href="#">Consulta por whatsapp</a>
+                        <a class="enlace" href="#">Menú</a>
+                    </nav>
+                </div>
+                <div class="four columns">
+                    <nav class="menu">
+                        <a class="enlace" href="#">Dirección</a>
+                        <a class="enlace" href="#">Teléfono</a>
+                        <a class="enlace" href="#">Ubicación</a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+</html>
