@@ -1,0 +1,73 @@
+body {
+    background-color: #d0e3ea;
+}
+
+h1 {
+    text-align: center;
+    color: rgb(103, 4, 103);
+}
+
+h4 {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+header {
+    padding: 20px 0 0 0;
+    background: #b6d0d9;
+    text-align: center;
+}
+
+@media (min-width: 750px) {
+    header {
+        text-align: left;
+    }
+}
+
+.borrar-destino {
+    background-color: white;
+    border-radius: 10%;
+    padding: 5px 10px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+ul {
+    list-style: none;
+}
+
+.hero {
+    background-image: url(../imagenes/mexico.jpg);
+    height: 551px;
+}
+
+.encabezado {
+    margin: 30px 0;
+    color: rgb(3, 89, 3);
+}
+
+.submenu {
+    position: relative;
+}
+
+.submenu #carrito {
+    display: none;
+}
+
+.submenu:hover #carrito  {
+    display: block;
+    color:white;
+    position: absolute;
+    right: 0;
+    top: 100%;
+    z-index: 1;
+    background: rgb(0, 0, 0);
+    padding: 20px;
+}
+
+.vacio {
+    padding: 10px;
+}
+
+
