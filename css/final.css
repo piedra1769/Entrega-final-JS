@@ -68,6 +68,87 @@ ul {
 
 .vacio {
     padding: 10px;
+    background-color: aqua;
+    text-align: center;
+    border-radius: 10px;
+    color: white;
 }
 
+.button {
+    background-color: aqua;
+    color: white;
+}
+
+.contenido-hero {
+    margin-top: 80px;
+    color: purple;
+}
+
+.contenido-hero form {
+    position: relative;
+    margin-bottom: 0;
+}
+
+.contenido-hero form #buscador {
+    height: 50px;
+    margin-bottom: 0;
+}
+
+.contenido-hero form .submit-buscador {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    padding: 0;
+    display: block;
+    text-indent: -9990px;
+    width: 50px;
+    background-image: url(../imagenes/lupa.png);
+    background-position: right center;
+    background-repeat: no-repeat;
+    border: none;
+    
+}
+
+.lista-viajes .row {
+    margin-bottom: 20px;
+}
+
+.agregar-carrito {
+    margin: 0 0 0 0;
+}
+
+.card {
+    text-align: center;
+    border: 1px solid white;
+    background: rgb(235, 244, 241);
+}
+
+
+.info-card {
+    padding: 10px 20px;
+}
+
+.info-card p,
+.card h4 {
+    margin-bottom: 5px;
+}
+
+.precio {
+    font-weight: 700;
+    font-size: 17px;
+}
+
+.footer {
+    margin-top: 40px;
+    padding-top: 40px;
+    background-color: rgba(223, 221, 221, 0.705)
+}
+
+.footer .menu a {
+    display: block;
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: white;
+}
 
