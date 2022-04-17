@@ -1,5 +1,5 @@
 body {
-    background-color: #d0e3ea;
+    background-color: whitesmoke;
 }
 
 h1 {
@@ -14,7 +14,7 @@ h4 {
 
 header {
     padding: 20px 0 0 0;
-    background: #b6d0d9;
+    background: whitesmoke;
     text-align: center;
 }
 
@@ -39,7 +39,7 @@ ul {
 
 .hero {
     background-image: url(../imagenes/mexico.jpg);
-    height: 551px;
+    height: 500px;
 }
 
 .encabezado {
@@ -142,7 +142,7 @@ ul {
 .footer {
     margin-top: 40px;
     padding-top: 40px;
-    background-color: rgba(223, 221, 221, 0.705)
+    background-color: #d0e3ea;
 }
 
 .footer .menu a {
