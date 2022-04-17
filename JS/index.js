@@ -24,7 +24,7 @@ function leerDatosDestino(destino){
     const infoDestino = {
         imagen: destino.querySelector('img').src,
         titulo: destino.querySelector('h4').textContent,
-        precio: destino.querySelector('.precio span').textContent,
+        precio: destino.querySelector('.precio').textContent,
         id: destino.querySelector('a').getAttribute('data-id')
     }
 
@@ -44,7 +44,7 @@ function insertarCarrito(destino) {
        </td>
     `;
     listaViajes.appendChild(row);
-    guardarPlatilloLocalStorage(destino);
+    guardarDestinoLocalStorage(destino);
 }
 
 function eliminarDestino(e) {
@@ -55,7 +55,7 @@ function eliminarDestino(e) {
     
     if(e.target.classList.contains('borrar-destino')) {
         e.target.parentElement.parentElement.remove();
-        platillo = e.target.parentElement.parentElement;
+        destino = e.target.parentElement.parentElement;
         destinoId = destino.querySelector('a').getAttribute('data-id');
     }
     eliminarDestinoLocalStorage(destinoId)
@@ -73,7 +73,7 @@ function vaciarCarrito(){
 function guardarDestinoLocalStorage(destino) {
     let viajes;
 
-   viajes = obtenerPlatillosLocalStorage();
+    viajes = obtenerViajesLocalStorage();
     viajes.push(destino);
 
     localStorage.setItem('viajes', JSON.stringify(viajes));
@@ -85,13 +85,13 @@ function obtenerViajesLocalStorage() {
     if(localStorage.getItem('viajes') === null) {
         viajesLS = [];
     }else {
-        vaijesLS = JSON.parse(localStorage.getItem('viajes'));
+        viajesLS = JSON.parse(localStorage.getItem('viajes'));
     }
     return viajesLS;
 }
 
 function leerLocalStorage() {
-    let vaijesLS;
+    let viajesLS;
 
     viajesLS = obtenerViajesLocalStorage();
 
@@ -104,18 +104,18 @@ function leerLocalStorage() {
             <td>${destino.titulo}</td>
             <td>${destino.precio}</td>
             <td>
-                <a href="#" class="borrar-platillo" data-id="${destino.id}">X</a>
+                <a href="#" class="borrar-destino" data-id="${destino.id}">X</a>
             </td>
         `;
         listaViajes.appendChild(row);
     });
 }
 
-function eliminarDestinoLocalStorage(destinoId) {
+function eliminarDestinoLocalStorage(destino) {
     let viajesLS;
-    viajesLS = obtenerPlatillosLocalStorage();
+    viajesLS = obtenerViajesLocalStorage();
 
-    viajesLS.forEach(function(_destinoLS, index){
+    viajesLS.forEach(function(destinoLS, index){
         if(destinoLS.id === destino) {
             viajesLS.splice(index, 1);
         }
