@@ -8,8 +8,12 @@ cargarEventListeners();
 function cargarEventListeners() {
   viajes.addEventListener("click", comprarDestino);
   carrito.addEventListener("click", eliminarDestino);
-  vaciarCarritoBtn.addEventListener("click", vaciarCarrito); 
+  vaciarCarritoBtn.addEventListener("click", vaciarCarrito);
   document.addEventListener("DOMContentLoaded", leerLocalStorage);
+
+    function newFunction() {
+        return 'Error!';
+    }
 }
 
 function comprarDestino(e) {
@@ -34,6 +38,7 @@ function leerDatosDestino(destino){
 
 function insertarCarrito(destino) {
     const row = document.createElement('tr');
+    Swal.fire('¿Seguro deseas incluirlo en el carrito?');
     row.innerHTML = `   
     <td>
            <img src="${destino.imagen}" width=100> 
