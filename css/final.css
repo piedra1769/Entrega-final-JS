@@ -53,6 +53,8 @@ ul {
 
 .submenu #carrito {
     display: none;
+    position: absolute;
+
 }
 
 .submenu:hover #carrito  {

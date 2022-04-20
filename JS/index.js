@@ -8,7 +8,7 @@ cargarEventListeners();
 function cargarEventListeners() {
   viajes.addEventListener("click", comprarDestino);
   carrito.addEventListener("click", eliminarDestino);
-  vaciarCarritoBtn.addEventListener("click", vaciarCarrito);
+  vaciarCarritoBtn.addEventListener("click", vaciarCarrito); 
   document.addEventListener("DOMContentLoaded", leerLocalStorage);
 }
 
@@ -19,6 +19,7 @@ function comprarDestino(e) {
         leerDatosDestino(destino);
     }
 }
+
 
 function leerDatosDestino(destino){
     const infoDestino = {
@@ -33,8 +34,8 @@ function leerDatosDestino(destino){
 
 function insertarCarrito(destino) {
     const row = document.createElement('tr');
-    row.innerHTML = `
-       <td>
+    row.innerHTML = `   
+    <td>
            <img src="${destino.imagen}" width=100> 
        </td> 
        <td>${destino.titulo}</td>
@@ -47,6 +48,7 @@ function insertarCarrito(destino) {
     guardarDestinoLocalStorage(destino);
 }
 
+
 function eliminarDestino(e) {
     e.preventDefault();
 
@@ -58,7 +60,7 @@ function eliminarDestino(e) {
         destino = e.target.parentElement.parentElement;
         destinoId = destino.querySelector('a').getAttribute('data-id');
     }
-    eliminarDestinoLocalStorage(destinoId)
+    eliminarDestinoLocalStorage(destinoId) 
 }
 
 function vaciarCarrito(){
@@ -90,6 +92,7 @@ function obtenerViajesLocalStorage() {
     return viajesLS;
 }
 
+
 function leerLocalStorage() {
     let viajesLS;
 
@@ -111,6 +114,7 @@ function leerLocalStorage() {
     });
 }
 
+
 function eliminarDestinoLocalStorage(destino) {
     let viajesLS;
     viajesLS = obtenerViajesLocalStorage();
@@ -127,3 +131,4 @@ function eliminarDestinoLocalStorage(destino) {
 function vaciarLocalStorage() {
     localStorage.clear();
 }
+
